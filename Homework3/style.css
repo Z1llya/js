@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+
+.product-card{
+    height: 500px;
+    border: solid black 1px;
+    width: 600px;
+    margin: 3px;
+}
+
+.product-image{
+    height: 400px;
+}
+.product-title{
+    color: brown;
+}
