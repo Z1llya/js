@@ -210,7 +210,7 @@
 // let revers = (object1) =>{
 //     let temp = object1[0];
 //     object1[0] = object1[object1.length-1];
-//     object1[object1.length-1] = tmp;
+//     object1[object1.length-1] = temp;
 //     return object1;
 // }
 // console.log(revers(users));
