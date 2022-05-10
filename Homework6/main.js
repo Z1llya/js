@@ -110,58 +110,57 @@
 // - всі буби
 // - всі трефи від 9 та більше
 //
-//
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
 //
-// let cards = [
-//     {cardSuit:"heart"  , value:"6"  , color:"red"},
-//     {cardSuit:"heart"  , value:"7"  , color:"red"},
-//     {cardSuit:"heart"  , value:"8"  , color:"red"},
-//     {cardSuit:"heart"  , value:"9"  , color:"red"},
-//     {cardSuit:"heart",   value:"10"  ,color:"red"},
-//     {cardSuit:"heart" ,  value:"J" ,  color:"red"},
-//     {cardSuit:"heart"  , value:"Q" ,  color:"red"},
-//     {cardSuit:"heart"  , value:"K" ,  color:"red"},
-//     {cardSuit:"heart"  , value:"A"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"6"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"7"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"8"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"9"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"10"  ,color:"red"},
-//     {cardSuit:"diamond" ,value:"J"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"Q"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"K"  , color:"red"},
-//     {cardSuit:"diamond" ,value:"A"  , color:"red"},
-//     {cardSuit:"spade"   ,value: "6" , color:"black"},
-//     {cardSuit:"spade"   ,value: "7" , color:"black"},
-//     {cardSuit:"spade"   ,value: "8" , color:"black"},
-//     {cardSuit:"spade"   ,value: "9" , color:"black"},
-//     {cardSuit:"spade"   ,value: "10" ,color:"black"},
-//     {cardSuit:"spade"   ,value: "J" , color:"black"},
-//     {cardSuit:"spade"   ,value: "Q" , color:"black"},
-//     {cardSuit:"spade"   ,value: "K" , color:"black"},
-//     {cardSuit:"spade"   ,value: "A" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "6" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "7" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "8" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "9" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "10" ,color:"black"},
-//     {cardSuit:"clubs"  ,value: "J" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "Q" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "K" , color:"black"},
-//     {cardSuit:"clubs"  ,value: "A" , color:"black"}
-// ];
-// let filter1 = cards.filter(value => value.cardSuit==="spade" && value.value ==="A");
-// console.log(filter1);
-// let filter2 = cards.filter(value => value.value ==="6");
-// console.log(filter2);
-// let filter3 = cards.filter(value => value.color ==="red");
-// console.log(filter3);
-// let filter4 = cards.filter(value => value.cardSuit ==="diamond");
-// console.log(filter4);
-// let filter5 = cards.filter(value => value.cardSuit ==="clubs" && value.value >= "9");
-// console.log(filter5);
+let cards = [
+    {cardSuit:"heart"  , value:"6"  , color:"red"},
+    {cardSuit:"heart"  , value:"7"  , color:"red"},
+    {cardSuit:"heart"  , value:"8"  , color:"red"},
+    {cardSuit:"heart"  , value:"9"  , color:"red"},
+    {cardSuit:"heart",   value:"10"  ,color:"red"},
+    {cardSuit:"heart" ,  value:"J" ,  color:"red"},
+    {cardSuit:"heart"  , value:"Q" ,  color:"red"},
+    {cardSuit:"heart"  , value:"K" ,  color:"red"},
+    {cardSuit:"heart"  , value:"A"  , color:"red"},
+    {cardSuit:"diamond" ,value:"6"  , color:"red"},
+    {cardSuit:"diamond" ,value:"7"  , color:"red"},
+    {cardSuit:"diamond" ,value:"8"  , color:"red"},
+    {cardSuit:"diamond" ,value:"9"  , color:"red"},
+    {cardSuit:"diamond" ,value:"10"  ,color:"red"},
+    {cardSuit:"diamond" ,value:"J"  , color:"red"},
+    {cardSuit:"diamond" ,value:"Q"  , color:"red"},
+    {cardSuit:"diamond" ,value:"K"  , color:"red"},
+    {cardSuit:"diamond" ,value:"A"  , color:"red"},
+    {cardSuit:"spade"   ,value: "6" , color:"black"},
+    {cardSuit:"spade"   ,value: "7" , color:"black"},
+    {cardSuit:"spade"   ,value: "8" , color:"black"},
+    {cardSuit:"spade"   ,value: "9" , color:"black"},
+    {cardSuit:"spade"   ,value: "10" ,color:"black"},
+    {cardSuit:"spade"   ,value: "J" , color:"black"},
+    {cardSuit:"spade"   ,value: "Q" , color:"black"},
+    {cardSuit:"spade"   ,value: "K" , color:"black"},
+    {cardSuit:"spade"   ,value: "A" , color:"black"},
+    {cardSuit:"clubs"  ,value: "6" , color:"black"},
+    {cardSuit:"clubs"  ,value: "7" , color:"black"},
+    {cardSuit:"clubs"  ,value: "8" , color:"black"},
+    {cardSuit:"clubs"  ,value: "9" , color:"black"},
+    {cardSuit:"clubs"  ,value: "10" ,color:"black"},
+    {cardSuit:"clubs"  ,value: "J" , color:"black"},
+    {cardSuit:"clubs"  ,value: "Q" , color:"black"},
+    {cardSuit:"clubs"  ,value: "K" , color:"black"},
+    {cardSuit:"clubs"  ,value: "A" , color:"black"}
+];
+let filter1 = cards.filter(value => value.cardSuit==="spade" && value.value ==="A");
+console.log(filter1);
+let filter2 = cards.filter(value => value.value ==="6");
+console.log(filter2);
+let filter3 = cards.filter(value => value.color ==="red");
+console.log(filter3);
+let filter4 = cards.filter(value => value.cardSuit ==="diamond");
+console.log(filter4);
+let filter5 = cards.filter(value => value.cardSuit ==="clubs" && value.value >= "9");
+console.log(filter5);
