@@ -1,0 +1,12 @@
+.div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.post{
+    border: 1px solid black;
+    width: 20%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+
+}
