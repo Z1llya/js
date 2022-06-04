@@ -1,0 +1,14 @@
+.div{
+
+}
+.divBlock{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.divComments{
+    border: 1px solid black;
+    width: 19%;
+    box-sizing: border-box;
+    margin: 5px;
+}

@@ -1,0 +1,10 @@
+.div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.userBlock{
+    border: 1px solid black;
+    width: 49%;
+    box-sizing: border-box;
+    margin: 5px;
+}
