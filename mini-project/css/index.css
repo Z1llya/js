@@ -1,6 +1,7 @@
 .div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center
 }
 .userBlock{
     border: 1px solid black;

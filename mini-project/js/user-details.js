@@ -11,6 +11,7 @@ for (const element of userArray) {
 
     let div = document.createElement('div');
     div.classList.add('div');
+
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
         .then(value => value.json())
         .then(value => {
@@ -39,7 +40,7 @@ for (const element of userArray) {
                     .then(value => value.json())
                     .then(value => {
 
-                        // div.append(nameTitle);
+
                         let divBlock = document.createElement('div');
                         divBlock.classList.add('divBlock');
                         for (const element of value) {
@@ -67,16 +68,9 @@ for (const element of userArray) {
                             divBlock.append(divTitle);
                             div.append(divBlock);
 
-                            // divTitle.append(buttonPost);
-                            // divBlock.append(divTitle);
-                            // div.append(divBlock);
-                            // document.body.append(div);
+
                         }
-
-
-
-
-
+                        button.disabled = true;
                     })
             }
 

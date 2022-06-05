@@ -9,13 +9,14 @@ for (const element of postArray) {
     let userId = element.userId;
 
     let div = document.createElement('div');
+    div.classList.add('mainDiv');
     let divBlock = document.createElement('div');
     divBlock.classList.add('divBlock');
     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
         .then(value => value.json())
         .then(value => {
             let divInfo = document.createElement('div');
-            div.innerHTML = `UserId: ${userId} <p> PostId: ${postId} <p> Title: ${value.title} <p> Body: ${value.body}`;
+            divInfo.innerHTML = `UserId: ${userId} <p> PostId: ${postId} <p> Title: ${value.title} <p> Body: ${value.body}`;
             div.append(divInfo);
 
         })
@@ -26,6 +27,7 @@ for (const element of postArray) {
 
             let button = document.createElement('button');
             button.innerText = 'comments of current post';
+            button.classList.add("button");
 
             button.onclick = function (e){
                 for (const element of value) {
@@ -34,9 +36,12 @@ for (const element of postArray) {
                     divComments.innerHTML = `${element.body}`;
                     divBlock.append(divComments);
                     div.append(divBlock);
+                    button.disabled = true;
+
                 }
             }
             div.append(button);
+
 
 
 
